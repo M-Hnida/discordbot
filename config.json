@@ -1,0 +1,28 @@
+{
+    "_comment": "Global config — applies to all bots. Bot-specific config overrides scalar values. Array fields (mcp_servers) are merged (global + bot).",
+    "llm_provider": "openrouter",
+    "model": "stepfun/step-3.5-flash:free",
+    "base_url": "https://api.kilo.ai/api/openrouter",
+    "api_key_env": "KILOCODE_API_KEY",
+    "mcp_servers": [
+        {
+            "name": "exa_web_search",
+            "transport": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-remote",
+                "https://mcp.exa.ai/mcp"
+            ]
+        },
+        {
+            "name": "giphy",
+            "transport": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-server-giphy"
+            ]
+        }
+    ]
+}

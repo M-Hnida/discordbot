@@ -1,0 +1,9 @@
+{
+    "active": false,
+    "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
+    "llm_provider": "openrouter",
+    "model": "google/gemini-2.5-flash-free",
+    "tts_provider": "fishaudio",
+    "fishaudio_api_key": "",
+    "fishaudio_voice_id": ""
+}
